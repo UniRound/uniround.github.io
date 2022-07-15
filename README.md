@@ -5,5 +5,5 @@
 <h1 align="center">Welcome To Uniround Brochure</h1>
 
 <div align"center">
-<p align"center">To view the <strong>Uniround Brochure Site</strong>, please click <a href="https://uniround.github.io">here</a></p>
+<p align"center">To view the <strong>Uniround Brochure Site</strong>, please click <a href="https://uniround.vercel.app">here</a></p>
 </div>
