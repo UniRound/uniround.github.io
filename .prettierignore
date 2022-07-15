@@ -1,0 +1,5 @@
+# ignore the following files/dirs from prettier write
+.yarn
+.next
+dist
+node_modules
