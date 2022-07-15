@@ -14,9 +14,9 @@ export default Home;
 
 Home.getLayout = (page) => {
   return (
-    <PrimaryLayout>
+    <PrimaryLayout meta={{ title: { default: 'Hello World!' } }}>
       <SidebarLayout />
-      {page}
+      <main id="index">{page}</main>
     </PrimaryLayout>
   );
 };

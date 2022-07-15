@@ -1,17 +1,16 @@
-import Head from 'next/head';
 import type { ReactNode } from 'react';
+import MetaLayout, { IMetaLayout } from '../meta/MetaLayout';
 
 export interface IPrimaryLayout {
+  meta: IMetaLayout;
   children: ReactNode;
 }
 
-const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
+const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children, meta }) => {
   return (
     <>
-      <Head>
-        <title>Hi</title>
-      </Head>
-      <main>{children}</main>
+      <MetaLayout {...meta} />
+      <div id="layout">{children}</div>
     </>
   );
 };

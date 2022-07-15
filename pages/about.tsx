@@ -20,9 +20,16 @@ export default About;
 
 About.getLayout = (page) => {
   return (
-    <PrimaryLayout>
+    <PrimaryLayout
+      meta={{
+        title: {
+          default: 'Hello World!',
+          pageOption: { subString: 'About', joinFrom: '|' },
+        },
+      }}
+    >
       <SidebarLayout />
-      {page}
+      <main id="about">{page}</main>
     </PrimaryLayout>
   );
 };
