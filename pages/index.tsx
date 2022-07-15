@@ -1,10 +1,10 @@
-import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
-import SidebarLayout from '../components/layouts/sidebar/SidebarLayout';
+import PrimaryLayout from '@/components/layouts/primary/PrimaryLayout';
+import SidebarLayout from '@/components/layouts/sidebar/SidebarLayout';
 import type { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {
   return (
-    <section>
+    <section className="w-full bg-colors-primary text-colors-darkgreen">
       <h1>Welcome to NextJs</h1>
     </section>
   );
